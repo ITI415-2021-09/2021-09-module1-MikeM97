@@ -12,13 +12,14 @@ public class Goal : MonoBehaviour
 		if (other.gameObject.tag == "Projectile") {
 			// if so, set goalMet = true
 			Goal.goalMet = true;
+            Material mat = GetComponent<Renderer>().material;
 
-			// also set the alpha of the color of higher opacity
-			Material mat = GetComponent<Renderer>().material;
-			Color c = mat.color;
-			c.a = 1;
-			mat.color = c;
-		}
+            Color c = mat.color;
+
+            c.a = 1;
+
+            mat.color = c;
+        }
 	}
     // Start is called before the first frame update
     void Start()
