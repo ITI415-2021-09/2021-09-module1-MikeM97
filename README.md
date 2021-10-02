@@ -1,2 +1,5 @@
 # Module1-Projects
  ApplePicker, Mission Demolition and Prototype 1
+
+
+My goal for the Prototype was to combine elements from roll a ball, mission demolition, and a bit of apple picker. Elements from roll a ball include the actual player object, while the goal was taken from mission demolition. Lastly the UI was based on work done in apple picker and mission demolition. Some challenges I faced include getting a proper goal trigger. To circumvent this shortcoming, I scrapped the trigger idea and made it so the players z coordinate determined if they were at the goal area (z -> -50). To prevent exploits of winning while falling, or losing after a win I added barriers by the goal so the player would have to actively try and break the game, even then I think it is too difficult to do given the goals location being almost exactly at z coordinate -50. If I were to advance this in the future I would make the play area less flat to include some curved roads for extra challenge.
